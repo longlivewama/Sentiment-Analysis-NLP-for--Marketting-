@@ -1,6 +1,6 @@
 # Sentiment Analysis and Natural Language Processing for Marketing
 
-I'm keeping my documents/source codes related to [this Manning live project](https://github.com/longlivewama).
+I'm keeping my documents/source codes related into my github account here [this Manning live project](https://github.com/longlivewama).
 
 #### From the project summary:
 
