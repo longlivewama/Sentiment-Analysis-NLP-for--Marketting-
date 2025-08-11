@@ -1,0 +1,9 @@
+pandas
+numpy
+seaborn
+ndjson
+nltk
+scikit-learn
+matplotlib
+
+
