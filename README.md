@@ -1,47 +1,81 @@
 # Sentiment Analysis and Natural Language Processing for Marketing
 
-I'm keeping my documents/source codes related into my github account here [this Manning live project](https://github.com/longlivewama).
+I'm keeping my documents/source codes related to this Manning liveProject in my GitHub account [here](https://github.com/longlivewama).
 
-#### From the project summary:
+---
 
-In this liveProject, you can gain an overall impression of the job of a Natural Language Processing (NLP) Specialist working on the Growth Hacking Team of a freshly launched startup that is introducing a new video game to the market. One of the key targets of a growth hacking team is to enhance the massive growth of early startups in a short time. To do so, it introduces strategies with the help of which one can acquire as many customers as possible with the lowest cost as possible. As part of your team’s growth hacking strategy, your boss wants to map the field of the video game market. She aims to find out how customers evaluate your competitors’ products, namely what they like and dislike in a video game. Knowing what makes a video game attractive to a gamer helps the marketing team articulate the message of your product more effectively.
+## Project Summary
 
-To be able to find out what makes a video game worth buying according to gamers, you need to get deeper insights into the linguistic features of their utterances. As an NLP Specialist, your task will be to analyze customers’ reviews about video games. In order to carry out this task, you will employ different NLP methods. These methods will enable you to acquire a deeper understanding of customer feedback and opinion.
+In this liveProject, you will gain an overall impression of the job of a Natural Language Processing (NLP) Specialist working on the Growth Hacking Team of a freshly launched startup introducing a new video game to the market.  
 
-Your task as an NLP Specialist on the Growth Hacking Team is the following:
+One of the key targets of a growth hacking team is to drive rapid growth for early startups. This often involves strategies to acquire as many customers as possible at the lowest cost. As part of the strategy, your boss wants to map the video game market to understand how customers evaluate competitors’ products — namely, what they **like** and **dislike** in a video game.  
 
-   * Download the dataset of Amazon reviews.
-   * Create your own dataset from the Amazon reviews.
-   * Decide whether people like or dislike the video game they bought. Label each review with a sentiment score between -1 and 1.
-   * Check the performance of your sentiment analyzer by comparing the sentiment scores with the review ratings.
-   * Evaluate the performance of your sentiment analyzer and find out if you managed to correctly label the reviews.
-   * Try out other methods of sentiment analysis. Explore how people evaluate the video game they purchased by classifying the reviews as positive, negative, and neutral.
+Knowing what makes a video game attractive to gamers helps the marketing team craft a more effective product message. To achieve this, you will dive into customer reviews to extract insights using various NLP methods.
 
-Summarize your results to the Head of the Growth Hacking Team. Based on your findings, list those things that are liked and those ones that are disliked about video games.
+---
+
+## Tasks as an NLP Specialist
+
+Your main responsibilities in this project include:
+
+- Download the dataset of Amazon reviews.  
+- Create a filtered dataset for video game reviews.  
+- Assign a sentiment score between **-1** and **1** to each review.  
+- Compare sentiment scores with star ratings to evaluate accuracy.  
+- Experiment with multiple sentiment analysis methods.  
+- Classify reviews as **Positive**, **Negative**, or **Neutral**.  
+- Summarize findings to highlight what gamers like or dislike about video games.
+
+---
 
 ## Techniques Employed
 
-In order to get a deeper understanding of people’s opinion about video games, you will employ various NLP techniques. Here is a short list about what you will do and what techniques you will use.
+To deeply understand gamers’ opinions, the project uses:
 
-   * Sampling from imbalanced datasets using the imbalanced-learn package
-   * Enquiring about the sentiment value of the reviews with the dictionary-based sentiment analysis tools, which are part of NLTK, a natural language processing toolkit, used in Python.
-   * Finding out if your algorithm did a good job. Data evaluation with scikit-learn in Python.
-   * Analyzing the reviews with a state-of-the-art deep learning technique, namely with the DistilBERT model. To build this model, you will need to run Pytorch, transformers, and the simpletransformers packages.
-   * Evaluating your model and creating descriptive statistics in Python with scikit-learn library before reporting your results to your boss.
-   * Visualizing your findings about preferable and non-preferable words related to video games using Altair.
-   
+- **Imbalanced Dataset Sampling** – with the `imbalanced-learn` package.  
+- **Dictionary-based Sentiment Analysis** – using NLTK sentiment tools.  
+- **Model Evaluation** – via scikit-learn metrics.  
+- **Neural Network-based Analysis** – using the **DistilBERT** model with PyTorch, transformers, and simpletransformers.  
+- **Data Visualization** – via Altair to show key “liked” and “disliked” terms.  
+- **Interactive Web Application** – powered by **Streamlit** for real-time sentiment analysis.  
+
+---
+
 ## Project Outline
 
-The project is made up of five steps, which are built on each other:
+1. **Creating Your Dataset**  
+2. **Dictionary-based Sentiment Analyzer**  
+3. **Evaluator for Dictionary-based Analyzer**  
+4. **Neural Network-based Sentiment Analyzers**  
+5. **Reporting and Visualization**  
+6. **Interactive Streamlit Demonstration**
 
-   * Creating your dataset.
-   * Creating a dictionary-based sentiment analyzer.
-   * Evaluating your dictionary-based sentiment analyzer.
-   * Creating neural network-based sentiment analyzers.
-   * Reporting your results.
-
-Both the steps and the techniques in this project model a real-life scenario. If you are employed as an NLP Specialist, you are likely to accomplish jobs like these ones.
+---
 
 ## Dataset
 
-The Amazon review dataset can be downloaded from [here](https://nijianmo.github.io/amazon/index.html). Download the zipped json file of the category of video games 5 core, which can be found under the title Small subsets for experimentation. Once the download is complete, extract the file.
+The Amazon review dataset can be downloaded from [here](https://nijianmo.github.io/amazon/index.html).  
+Use the **Video Games 5-core** JSON file from *Small subsets for experimentation*.  
+
+---
+
+## Additional Work: Interactive Sentiment Analyzer with Streamlit
+
+An interactive **Streamlit** application was added to make the project more engaging and accessible for both technical and non-technical audiences.  
+
+**Live Demo Features**:
+- Real-time sentiment analysis of text.  
+- Interactive gauge charts showing sentiment scores.  
+- Sample reviews for quick testing.  
+- Rule-based sentiment classification.  
+- Mobile-friendly interface.  
+
+---
+
+### Running the Streamlit Application Locally
+
+1. Install Python (3.8+ recommended).  
+2. Clone the repository:  
+   ```bash
+   git clone https://github.com/longlivewama/sentiment_analysis_project.git
+   cd sentiment_analysis_project
